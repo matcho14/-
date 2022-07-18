@@ -125,10 +125,11 @@ header .logo img:hover{
     width: 100%;
     height: 25vh;
     padding: 10px 0;
+    z-index: -3;
 }
 .serve .info{
     position: absolute;
-    z-index: 1;
+    z-index: -7;
     top: 40px;
     right: 0px;
     background-color: #A39894;
@@ -146,8 +147,168 @@ header .logo img:hover{
     top: 40px;
     right: 850px;
     position: absolute;
-    z-index: 2;
+    z-index: -5 ;
     clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);;
 }
+.serve .float-para{
+    font-family: 'Cairo';
+    font-weight: bolder;
+    font-size: 24px;
+    position: absolute;
+    top: 67px;
+    left: 269px;
+}
+
+
+.serve .float-para span{
+    color: white;
+    z-index: 1;
+}
+
+
+.serve-container{
+    display: flex;
+    padding: 20px 40px;
+    justify-content: space-between;
+    background-color: #FEFEFF;
+    gap: 10px;
+}
+
+.serve-container .card {
+    background-color: #FFFFFF;
+    flex: 1 1 30%;
+    border-radius: 20px;
+    padding: 5px 10px;
+    text-align: center;
+    box-shadow: 4px 4px 6px 6px rgba(0, 0, 0, .1);
+    border: 1px solid #fff;
+    
+}
+.serve-container .card .icon {
+    color: #978C87;
+    font-size: 50px;
+}
+.serve-container .card h4{
+    color: #762541;
+    margin-bottom: 5px;
+}
+.serve-container .card p{
+font-size: 15px;
+font-weight: 500;
+color: #757775;
+}
+.serve-order{
+    position: relative;
+    width: 100%;
+    height: 25vh;
+    padding: 10px 0;
+}
+.serve-order .info{
+    position: absolute;
+    top: 40px;
+    right: 0px;
+    background-color: #A39894;
+    padding: 20px 25px;
+    color: #fff;
+    font-weight: 900;
+    text-align: center;
+    width: 900px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    
+    height: 50px;
+}
+.serve-order .info p{
+    font-size: 40px;
+    text-align: center;
+    margin-left: 100px;
+}
+.serve-order .shape{
+    background-color: #751533;
+    width: 200px;
+    height: 90px;
+    top: 40px;
+    right: 850px;
+    position: absolute;
+    z-index: 1 ;
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
+.serve-order-para{
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    margin-right: 20px;
+    align-items: center;
+}
+.serve-order-para h3, .serve-order-para p{
+    align-self:flex-end;
+}
+.serve-order-para p{
+    font-size: 20px;
+    font-weight: 400;
+    color: #536277;
+    text-align: right;
+
+}
+.serve-order-para h3{
+    color: #536277;
+}
+.order-detail{
+    display: flex;
+    flex-direction: column;
+    margin: 20px 100px;
+    height: 40vh;
+    position: relative;
+}
+.order-detail h4{
+    float: right;
+    font-size: 25px;
+    color: #536277;
+    margin-bottom: 10px;
+    align-self: flex-end;
+}
+.order-detail .info-contain{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+    width: 150px;
+    justify-content: flex-end;
+    color: #536277;
+}
+.order-detail .input-container{
+    display: flex;
+    flex-direction: row;
+    align-self: flex-end;
+}
+.order-detail  input{
+    width: 200px;
+    margin-left: 10px;
+    border-radius: 20px;
+    border: 1px solid #536277;
+}
+.order-detail ul{
+    display: flex;
+    list-style: none;
+    align-self: flex-end;
+    justify-content: center;
+    align-items: center;
+}
+.order-detail ul li{
+    display: flex;
+    align-items: center;
+    
+}
+.order-detail ul li p{
+    color: #6B2C51;
+    font-weight: bold;
+    margin-right: 10px;
+    
+}
+.order-detail ul li input{
+    margin-left: 2px;
+}
+
 
 
